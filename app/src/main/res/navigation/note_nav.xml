@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_nav"
+    app:startDestination="@id/displayNote">
+
+    <fragment
+        android:id="@+id/displayNote"
+        android:name="com.asus.noteapiapp.AppFragments.displayNote"
+        android:label="fragment_display_note"
+        tools:layout="@layout/fragment_display_note" >
+        <action
+            android:id="@+id/action_displayNote_to_addNote"
+            app:destination="@id/addNote" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addNote"
+        android:name="com.asus.noteapiapp.AppFragments.addNote"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" />
+</navigation>
